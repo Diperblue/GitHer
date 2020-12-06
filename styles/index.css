@@ -1,0 +1,20 @@
+body {
+    background-color:rgba(66, 66, 66, 0.507);
+}
+#title {
+    position: absolute;
+    top:28.5%;
+    padding-left: max(5%);
+}
+#register-button-index {
+    position:absolute;
+    top:70%;
+    left:88%;
+}
+#button-collapsible-Navbar {
+    position: absolute;
+    left:80%;
+}
+#navbar-index {
+    width: 100%;
+}
