@@ -10,18 +10,14 @@ html, body {
     color: white;
     font-family: "Lato", sans-serif;
 }
-#collapsibleNavbar {
-    width: 100%;
-}
 #navbar-index {
     width: 100%;
 }
-button {
-    position: absolute;
-}
 #login {
+    position: absolute;
     top: 65%;
-    left:80%;
+    left:80.28%;
+    left: min(1%) max(125%);
 }
 #login_page-index {
     position: absolute;
@@ -35,7 +31,7 @@ button {
     position: absolute;
     top: 45%;
     left: 65%;
-    width: 310px;
+    width: 22.72%;
     height: 40px;
     border-radius: 10px;
 }
@@ -43,9 +39,9 @@ button {
     position: absolute;
     top: 55%;
     left: 65%;
-    border-radius: 10px;
-    width: 310px;
+    width: 22.72%;
     height: 40px;
+    border-radius: 10px;
 }
 .sidenav {
     position: absolute;
@@ -55,7 +51,7 @@ button {
 }
 button {
     background: none;
-    color: #ccc;
+    color: black;
     width: 100px;
     height: 40px;
     border: 1px solid #000000;
@@ -78,6 +74,9 @@ button:fucus {
     filter: blur(30px);
     transform: translateX(-130px) skewX(-15deg);
 }
+p {
+    display: none;
+}
 button::after {
     content: '';
     display: block;
@@ -91,14 +90,52 @@ button::after {
     filter: blur(30px);
     transform: translateX(-100px) scaleX(-15deg);
 }
-
 button:hover {
     background: #000000;
     cursor: pointer;
+    color:white;
 }
 
 button:hover:beforce {
     transform: translateX(300px) skewX(-15deg);
     opacity: 1;
     transition: .7s;
+}
+@media only screen and (max-width: 425px) {
+    .sidenav {
+        width: 100%;
+    }
+    #login {
+        position: absolute;
+        left: 63.28%;
+        top: 147%;
+    }
+    p {
+        position: absolute;
+        top: 170%;
+        display: unset;
+        color: white;
+    }
+    #title {
+        font-size: 360%;
+    }
+    #user {
+        position: absolute;
+        left: 12%;
+        top: 122%;
+        height: 47px;
+        width: 75%;
+    }
+    #senha {
+        position: absolute;
+        left: 12%;
+        top: 133.5%;
+        height: 47px;
+        width: 75%;
+    }
+    #login_page-index {
+        position: absolute;
+        top: 160%;
+        left: 13%;
+    }
 }
